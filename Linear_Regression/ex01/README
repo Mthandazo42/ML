@@ -1,0 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    README                                             :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mndhlovu <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/12/12 14:49:28 by mndhlovu          #+#    #+#              #
+#    Updated: 2018/12/12 14:58:01 by mndhlovu         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+THE PROJECT MAKES USE OF LINEAR AGRESSION TO TRY TO PREDICT THE SALARY OF 
+A NEW EMPLOYEE IN A HUGE COMPANY. THE PROGRAM IS DIVIDED INTO THE FOLLOWING STEPS
+
+STEP 1: IMPORT THE LIBRARIES (numpy, pandas, matplotlib, seaborn)
+STEP 2: IMPORT THE DATASET (.csv) using the read_csv() from pandas
+STEP 3: VISUALIZE THE DATA USING SEABORN
+STEP 4: SPLIT THE DATA INTO TRAINING SETS AND TESTING SETS
+STEP 5: FIT THE LINEAR REGRESSION TO THE TRAINING SET 
+STEP 6: TEST THE MODEL 
+STEP 7: VISUALIZE THE TEST RESULTS
+STEP 8: VISUALIZE THE TRAINING RESULTS
+STEP 9: CALCULATE THE RESIDUALS
+
+HAPPY CODING!!!!!
