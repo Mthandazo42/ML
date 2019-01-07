@@ -1,3 +1,10 @@
+"""
+NAME: boston.py
+AUTHOR: MTHANDAZO NDHLOVU
+DESCRIPTION: A SIMPLE EXAMPLE ILLUSTRACTING SCALAR REGRESSION
+ACKNOWLEDGEMENT: DEEP LEARNING WITH PYTHON, KERAS
+"""
+
 #imports
 from keras.datasets import boston_housing
 from keras.models import Sequential
@@ -7,6 +14,8 @@ import matplotlib.pyplot as plt
 
 (train_data, train_targets), (test_data, test_targets) = boston_housing.load_data()
 
+#DATA PREPERATION REMOVE THE MEAN FROM TRAIN_DATA AND DIVIDE THE RESULT WITH STANDARD
+#DEVIATION
 mean = train_data.mean(axis=0)
 train_data -= mean
 std = train_data.std(axis=0)
@@ -15,6 +24,7 @@ train_data /= std
 test_data -= mean
 test_data /= std
 
+#BUILDING THE MODEL
 def build_model():
     model = Sequential()
     model.add(layers.Dense(64, activation='relu', input_shape=(train_data.shape[1])))
@@ -23,6 +33,7 @@ def build_model():
     model.compile(optimizer='rmsprop', loss='mse', metrics=['mae'])
     return model
 
+#SMOOTHING THE CURVE
 def smooth_curve(points, factor=0.9):
     smoothed_points = []
     for point in points:
