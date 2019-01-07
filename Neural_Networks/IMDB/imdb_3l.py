@@ -1,8 +1,9 @@
 """
-NAME: imdb.py
+NAME: imdb_1l.py
 AUTHOR: MTHANDAZO NDHLOVU
 DESCRIPTION: BASIC NEURAL NETWORK WHICH ILLUSTRATES BINARY CLASSIFICATION AND THE USAGE
-OF BINARY_CROSSENTROPY
+OF BINARY_CROSSENTROPY (USING 3 LAYERS AND 64 UNITS AS WELL mse LOSS ARG AND tanh ACTIVATION
+INSTEAD OF THE ONES USED IN THE PREVIOUS FILE
 DATASET: IMDB (INTERNET MOVIE DATABASE)
 ACKNOWLEDGEMENTS: DEEP LEARNING WITH PYTHON, KERAS
 
@@ -28,11 +29,11 @@ decode_review = ' '.join([reverse_word_index.get(i - 3, '?') for i in train_data
 """
 
 def vectorize_sequences(sequences, dimension=10000):
-    #create an all zero matrix of shape (len(sequences), dimension)
-    results = np.zeros((len(sequences), dimension))
-    for i, sequences in enumerate(sequences):
-        results[i, sequences] = 1 #set specific indices of results[i] to 1s
-    return results
+        #create an all zero matrix of shape (len(sequences), dimension)
+        results = np.zeros((len(sequences), dimension))
+        for i, sequences in enumerate(sequences):
+            results[i, sequences] = 1 #set specific indices of results[i] to 1s
+            return results
 
 #our vector training data
 x_train = vectorize_sequences(train_data)
@@ -45,12 +46,13 @@ y_test = np.asarray(test_labels).astype('float32')
 
 #create the network
 network = Sequential()
-network.add(layers.Dense(16, activation='relu', input_shape=(10000,)))
-network.add(layers.Dense(16, activation='relu'))
+network.add(layers.Dense(64, activation='tanh', input_shape=(10000,)))
+network.add(layers.Dense(64, activation='tanh'))
+network.add(layers.Dense(64, activation='tanh'))
 network.add(layers.Dense(1, activation='sigmoid'))
 
 network.compile(optimizer='rmsprop',
-                loss='binary_crossentropy',
+                loss='mse',
                 metrics=['accuracy'])
 
 #validation of our model
@@ -99,3 +101,4 @@ plt.xlabel('Epochs')
 plt.ylabel('Accuracy')
 plt.legend()
 plt.show()
+
