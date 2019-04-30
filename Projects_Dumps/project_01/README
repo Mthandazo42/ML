@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    README                                             :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mndhlovu <mndhlovu@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/29 15:54:12 by mndhlovu          #+#    #+#              #
+#    Updated: 2019/04/29 15:57:13 by mndhlovu         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+USE OF SCIKIT-LEARN TO PREDICT THE GENDER OF THE USER FROM THE THEIR HEIGHT,
+WEIGHT AND SHOE SIZE.
+
+TOOL USED: SCIKIT-LEARN
+CLASSIFIER: DECISION TREE CLASSIFIER
+DATASET USED: CUSTOM MADE WITH 11 VARIABLES
+COMPLEXITY: SIMPLE 

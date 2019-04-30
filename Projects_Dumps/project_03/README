@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    README                                             :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mndhlovu <mndhlovu@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/30 08:28:19 by mndhlovu          #+#    #+#              #
+#    Updated: 2019/04/30 08:29:56 by mndhlovu         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Recommendation systems are the new cool. This project focuses on building a
+sample movie recommandation system using the LightFM model.
+
+Dataset Used MovieLens
+tools used: numpy, scipy, lightfm
