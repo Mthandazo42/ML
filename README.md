@@ -1,16 +1,6 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    README.md                                          :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: mndhlovu <mndhlovu@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/04/29 15:10:44 by mndhlovu          #+#    #+#              #
-#    Updated: 2019/04/29 15:48:20 by mndhlovu         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
 
-# *************************** ALGO SKELETONS ********************************* #
+
+#ALGO SKELETONS
 
 This folder contains code snippets illustrating the use of the 4 main
 Machine Learning Algorithms i.e. Linear Regressions, K-Nearest Neighbour,
@@ -39,7 +29,7 @@ prediction, movie sentimental Analysis and Image Recognition
 
 DataSets Used Boston Housing Dataset, MNIST, imdb dataset and reuters
 
-# ************************ OPENCV PROJECTS ******************************* #
+#OPENCV PROJECTS
 
 This folder contains sample projects which all rely on the OpenCv framework.
 From AgeGender Classifiers to Realtime Object Detection this folder has fully
